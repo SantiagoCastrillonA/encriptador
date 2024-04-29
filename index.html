@@ -1,0 +1,53 @@
+<!---Este html crea una pagina la cual va a tener como finalidad encriptar y desencriptar texto que se de por parametor.
+va a tener como elementor principales: 
+-Título de su sitio web
+-Campo para el texto que va a ser encriptado/desencriptado
+-Un botón para encriptar
+-Un botón para desencriptar
+-Área para mostrar el texto encriptado/desencriptado.
+-Un rodapie con los datos de la persona que desarrolló el sitio web!
+-El sitio web debe tener un diseño agradable y ser responsivo.-
+
+Las "llaves" de encriptación que utilizaremos son las siguientes:
+
+La letra "e" es convertida para "enter"
+La letra "i" es convertida para "imes"
+La letra "a" es convertida para "ai"
+La letra "o" es convertida para "ober"
+La letra "u" es convertida para "ufat"
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encriptador</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <form>
+        <label for="texto">Ingrese texto aquí:</label>
+        <input type="text" id="ingresar-texto" name="texto" class="input-text">
+        <button type="submit">Encriptar</button>
+    </form>
+
+    <div class="resultado">
+        <p>Texto encriptado:</p>
+        <p id="texto-encriptado"></p>
+    </div>
+
+    <div class="resultado">
+        <p>Texto desencriptado:</p>
+        <p id="texto-desencriptado"></p>
+    </div>
+
+    <footer>
+        <p>Desarrollado por: <strong>Santiago Castrillón</strong></p>
+    </footer>
+
+    <script src="index.js"></script>
+
+</body>
+</html>
